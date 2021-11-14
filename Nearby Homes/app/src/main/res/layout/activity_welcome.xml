@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/conatiner"
+    android:layout_height="match_parent"
+    tools:context=".intro.WelcomeActivity">
+
+    <TextView
+        android:elevation="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/button_trans_bg_white"
+        android:text="next"
+        android:textAllCaps="false"
+
+        android:id="@+id/next"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/viewpager"
+        android:layout_height="590dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <LinearLayout
+        android:id="@+id/dots"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+  android:layout_gravity="center_horizontal"
+
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready to book your room?"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:textSize="10sp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:paddingLeft="27dp"
+        android:paddingRight="27dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="SET CURRENT LOCATION"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:onClick="location_page"
+        android:textSize="14sp"
+        android:background="@drawable/btn_bg"/>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="70dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Have an account?"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"/>
+
+
+       <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+           android:id="@+id/reg"
+        android:textStyle="bold"
+           android:textColor="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

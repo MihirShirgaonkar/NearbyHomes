@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".homes.PublishFragment">
+
+  <LinearLayout
+      android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Enter Room Details"
+          android:fontFamily="@font/poppins_regular"
+          android:gravity="center"
+          android:textStyle="bold"
+          android:layout_marginTop="25dp"
+          android:textColor="@color/colorPrimary"/>
+
+ <TextView
+          android:layout_width="wrap_content"
+     android:layout_gravity="right"
+          android:layout_height="wrap_content"
+          android:text="GET CURRENT LOCATION"
+     android:id="@+id/location"
+     android:drawableTint="@color/colorPrimary"
+          android:fontFamily="@font/poppins_regular"
+          android:gravity="center"
+     android:drawablePadding="10dp"
+     android:textSize="12sp"
+     android:layout_marginRight="20dp"
+     android:drawableRight="@drawable/ic_baseline_my_location_24"
+          android:textStyle="bold"
+          android:layout_marginTop="25dp"
+          android:textColor="@color/colorPrimary"/>
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginRight="20dp"
+              android:visibility="visible"
+              >
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/poppins_regular"
+                  android:hint="Building Name*"
+                  android:id="@+id/building"
+
+                  android:maxLines="1"
+                  android:textColorHint="@color/grey"
+                  android:textSize="14sp" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+>
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+android:layout_weight="1"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="5dp"
+          android:visibility="visible"
+          >
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="Square Foot*"
+              android:inputType="number"
+              android:id="@+id/sqft"
+              android:maxLines="1"
+              android:textColorHint="@color/grey"
+              android:textSize="14sp" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+android:layout_weight="1"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="15dp"
+          android:layout_marginRight="20dp"
+          android:visibility="visible"
+          >
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="Area (1BHK/2BHK)"
+              android:id="@+id/area"
+              android:inputType="text"
+              android:textAllCaps="true"
+              android:capitalize="characters"
+              android:maxLines="1"
+              android:textColorHint="@color/grey"
+              android:textSize="14sp" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginRight="5dp"
+              android:visibility="visible"
+              >
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/poppins_regular"
+                  android:hint="Floor*"
+                  android:inputType="number"
+                  android:id="@+id/floor"
+                  android:maxLines="1"
+                  android:textColorHint="@color/grey"
+                  android:textSize="14sp" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginRight="20dp"
+              android:visibility="visible"
+              >
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/poppins_regular"
+                  android:hint="Landmark"
+                  android:inputType="text"
+                  android:id="@+id/landmark"
+                  android:maxLines="1"
+                  android:textColorHint="@color/grey"
+                  android:textSize="14sp" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+      </LinearLayout>
+
+
+  <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:visibility="visible"
+          >
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="Area/Locality*"
+              android:id="@+id/locality"
+              android:maxLines="1"
+              android:textColorHint="@color/grey"
+              android:textSize="14sp" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:visibility="visible"
+          >
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="Pincode*"
+              android:id="@+id/pincode"
+              android:inputType="number"
+              android:maxLines="1"
+              android:textColorHint="@color/grey"
+              android:textSize="14sp" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          >
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginRight="5dp"
+              android:visibility="visible"
+              >
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/poppins_regular"
+                  android:hint="City*"
+                  android:maxLines="1"
+                  android:id="@+id/city"
+                  android:textColorHint="@color/grey"
+                  android:textSize="14sp" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+          <com.google.android.material.textfield.TextInputLayout
+              style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="15dp"
+              android:layout_marginRight="20dp"
+              android:visibility="visible"
+              >
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/poppins_regular"
+                  android:hint="District*"
+                  android:inputType="text"
+                  android:id="@+id/dist"
+                  android:textAllCaps="true"
+                  android:maxLines="1"
+                  android:textColorHint="@color/grey"
+                  android:textSize="14sp" />
+          </com.google.android.material.textfield.TextInputLayout>
+
+
+      </LinearLayout>
+      <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:visibility="visible"
+          >
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="State*"
+              android:maxLines="1"
+              android:id="@+id/state"
+              android:textColorHint="@color/grey"
+              android:textSize="14sp" />
+      </com.google.android.material.textfield.TextInputLayout>
+   <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:visibility="visible"
+          >
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="Amount*"
+              android:id="@+id/amount"
+              android:maxLines="1"
+              android:textColorHint="@color/grey"
+              android:textSize="14sp" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <Spinner
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:id="@+id/spinner"/>
+
+ <com.google.android.material.textfield.TextInputLayout
+          style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="10dp"
+          android:layout_marginRight="20dp"
+          android:visibility="visible"
+          >
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="@font/poppins_regular"
+              android:hint="Description (Lift/Water/Parking Availability)"
+              android:textColorHint="@color/grey"
+              android:id="@+id/desc"
+              android:textSize="14sp" />
+      </com.google.android.material.textfield.TextInputLayout>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+
+          android:orientation="horizontal">
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:id="@+id/imgbtn1"
+          android:text="select Image"
+
+          android:paddingLeft="20dp"
+          android:layout_marginLeft="20dp"
+          android:paddingRight="20dp"
+
+          android:textAllCaps="false"
+          android:textColor="@color/white"
+          android:fontFamily="@font/poppins_regular"
+          android:background="@drawable/btn_bg2"
+   />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+
+              android:id="@+id/imgtext1"
+       />
+      </LinearLayout>
+<com.makeramen.roundedimageview.RoundedImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:riv_corner_radius="6dp"
+    android:id="@+id/img1"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/placeholder"/>
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+
+          android:orientation="horizontal">
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:text="select Image"
+
+          android:paddingLeft="20dp"
+          android:layout_marginLeft="20dp"
+          android:paddingRight="20dp"
+          android:textAllCaps="false"
+          android:id="@+id/imgbtn2"
+          android:textColor="@color/white"
+          android:fontFamily="@font/poppins_regular"
+          android:background="@drawable/btn_bg2"
+   />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:id="@+id/imgtext2"
+
+     />
+      </LinearLayout>
+<com.makeramen.roundedimageview.RoundedImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:riv_corner_radius="6dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:id="@+id/img2"
+    android:scaleType="fitXY"
+    android:src="@drawable/placeholder"/>
+
+
+  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+
+          android:orientation="horizontal">
+
+
+      <Button
+          android:layout_width="wrap_content"
+          android:layout_height="40dp"
+          android:text="select Image"
+android:id="@+id/imgbtn3"
+          android:paddingLeft="20dp"
+          android:layout_marginLeft="20dp"
+          android:paddingRight="20dp"
+
+          android:textAllCaps="false"
+          android:textColor="@color/white"
+          android:fontFamily="@font/poppins_regular"
+          android:background="@drawable/btn_bg2"
+   />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:id="@+id/imgtext3"
+
+          />
+      </LinearLayout>
+<com.makeramen.roundedimageview.RoundedImageView
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:riv_corner_radius="6dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/img3"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/placeholder"/>
+
+
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:id="@+id/upload"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="0dp"
+
+          android:layout_gravity="bottom"
+          android:text="UPLOAD"
+          android:fontFamily="@font/poppins_regular"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+
+
+          android:textSize="14sp"
+          android:background="@drawable/btn_bg"/>
+
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:id="@+id/register"
+          android:layout_marginLeft="20dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="150dp"
+
+          android:layout_gravity="bottom"
+          android:text="Submit"
+          android:fontFamily="@font/poppins_regular"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+
+
+          android:textSize="14sp"
+          android:background="@drawable/btn_bg"/>
+
+
+  </LinearLayout>
+</ScrollView>
